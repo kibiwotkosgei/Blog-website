@@ -3,8 +3,10 @@
     <h1>Home</h1>
     <p><%= FirstContent %> </p>
   
+    
     <%posts.forEach(function(post){%>
-    <%    console.log(post.title);%>
+        <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
     <%})%>
 
         
