@@ -58,7 +58,7 @@ posts.forEach(function(post){let storedTitle = _.lowerCase(post.title);
 if ( storedTitle === requestedTitle) {
   
 res.render("post",{title:post.title,
-content:post.content.substring(0,10) + "..."});
+content:post.content});
 };
 });
 });
